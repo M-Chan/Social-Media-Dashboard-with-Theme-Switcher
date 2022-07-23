@@ -15,3 +15,6 @@
 .cardDark{
     background-color: hsl(228, 28%, 20%);
 }
+
+.fontDark1{color: hsl(0, 0%, 100%);}
+.fontDark2{color: hsl(228, 34%, 66%);}
