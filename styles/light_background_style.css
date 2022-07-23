@@ -9,8 +9,9 @@
 }
 
 .bannerLight{
-    width: 100vw;
-    height: 30vh;
-
     background-color: hsl(225, 100%, 98%);
+}
+
+.cardLight{
+    background-color: hsl(227, 47%, 96%);
 }

@@ -9,8 +9,9 @@
 }
 
 .bannerDark{
-    width: 100vw;
-    height: 30vh;
-
     background-color: hsl(232, 19%, 15%);
+}
+
+.cardDark{
+    background-color: hsl(228, 28%, 20%);
 }

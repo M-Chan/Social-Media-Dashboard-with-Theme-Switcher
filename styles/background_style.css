@@ -7,6 +7,15 @@
 #container{
     width: 100vw;
     height: 100vh;
+
+    display: grid;
+    grid-template-columns: 11.45vw 18vw 1.75vw 18vw 1.7vw 18vw 1.7vw 18vw 11.45vw;
+    grid-template-rows: 15.2vh 28vh 12.4vh 16vh 2.9vh 16vh 9.5vh;
+}
+
+#banner{
+    width: 100vw;
+    height: 31vh;
 }
 
 #toggle{
@@ -19,6 +28,76 @@
 
     background-color: blueviolet;
 }
+
+.mainCard{
+    width: 18vw;
+    height: 28vh;
+
+    grid-row: 2;
+}
+
+#mainFb{
+    grid-column: 2;
+}
+
+#mainTwitter{
+    grid-column: 4;
+}
+
+#mainInsta{
+    grid-column: 6;
+}
+
+#mainYT{
+    grid-column: 8;
+}
+
+
+.overviewCard{
+    width: 18vw;
+    height: 16vh;
+}
+
+#viewsFB{
+    grid-column: 2;
+    grid-row: 4;
+}
+
+#likesFB{
+    grid-column: 4;
+    grid-row: 4;
+}
+
+#likesInsta{
+    grid-column: 6;
+    grid-row: 4;
+}
+
+#viewsInsta{
+    grid-column: 8;
+    grid-row: 4;
+}
+
+#retweetsTwitter{
+    grid-column: 2;
+    grid-row: 6;
+}
+
+#likesTwitter{
+    grid-column: 4;
+    grid-row: 6;
+}
+
+#likesYT{
+    grid-column: 6;
+    grid-row: 6;
+}
+
+#viewsYT{
+    grid-column: 8;
+    grid-row: 6;
+}
+
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
