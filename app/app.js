@@ -4,6 +4,8 @@ const banner = document.getElementById("banner");
 const toggleButton = document.getElementById("toggle");
 
 let card = document.querySelectorAll(".card");
+let font1 = document.querySelectorAll(".font1");
+let font2 = document.querySelectorAll(".font2");
 
 // toggleButton.addEventListener("onclick", toggleDarkMode());
 
@@ -20,6 +22,16 @@ function toggleDarkMode() {
             item.classList.remove("cardLight");
             item.classList.add("cardDark");
         })
+
+        font1.forEach(item => {
+            item.classList.remove("fontLight1");
+            item.classList.add("fontDark1");
+        })
+
+        font2.forEach(item => {
+            item.classList.remove("fontLight2");
+            item.classList.add("fontDark2");
+        })
     }
     else if (screen.classList.contains("containerDark")) {
         console.log("In Dark Mode");
@@ -32,6 +44,16 @@ function toggleDarkMode() {
         card.forEach(item => {
             item.classList.remove("cardDark");
             item.classList.add("cardLight");
+        })
+
+        font1.forEach(item => {
+            item.classList.remove("fontDark1");
+            item.classList.add("fontLight1");
+        })
+
+        font2.forEach(item => {
+            item.classList.remove("fontDark2");
+            item.classList.add("fontLight2");
         })
     }
     else {
