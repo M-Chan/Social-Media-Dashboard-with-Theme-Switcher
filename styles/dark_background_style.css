@@ -1,0 +1,16 @@
+*{
+	padding: 0;
+	margin: 0;
+    overflow: hidden;
+}
+
+.containerDark{
+    background-color: hsl(230, 17%, 14%);
+}
+
+.bannerDark{
+    width: 100vw;
+    height: 30vh;
+
+    background-color: hsl(232, 19%, 15%);
+}
