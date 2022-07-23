@@ -34,6 +34,9 @@
     background-color: blueviolet;
 }
 
+.font3{color: hsl(163, 72%, 41%);}
+.font4{color: hsl(356, 69%, 56%);}
+
 .mainCard{
     width: 18vw;
     height: 28vh;
