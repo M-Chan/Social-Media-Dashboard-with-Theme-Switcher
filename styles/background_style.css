@@ -258,5 +258,14 @@
     font-weight: 700;
 }
 
+.changeFont2{
+    display: inline-block;
+    
+    font-size: 2vh;
+    font-style: bold;
+    font-weight: 700;
+}
+
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
