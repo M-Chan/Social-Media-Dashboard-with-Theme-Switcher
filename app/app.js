@@ -15,8 +15,10 @@ function toggleDarkMode() {
         console.log("In Light Mode switching to Dark Mode");
         screen.classList.remove("containerLight");
         banner.classList.remove("bannerLight");
+        toggleButton.classList.remove("toggleLight")
         screen.classList.add("containerDark");
         banner.classList.add("bannerDark");
+        toggleButton.classList.add("toggleDark")
 
         card.forEach(item => { // change the colour of the cards from grey to dark desaturated blue
             item.classList.remove("cardLight");
@@ -39,8 +41,10 @@ function toggleDarkMode() {
         console.log("In Dark Mode switching to Light Mode");
         screen.classList.remove("containerDark");
         banner.classList.remove("bannerDark");
+        toggleButton.classList.remove("toggleDark")
         screen.classList.add("containerLight");
         banner.classList.add("bannerLight");
+        toggleButton.classList.add("toggleLight")
 
         card.forEach(item => { // change the colour of the cards from dark desaturated blue to grey
             item.classList.remove("cardDark");

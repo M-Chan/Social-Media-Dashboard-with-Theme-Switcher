@@ -12,3 +12,7 @@
 
 .fontDark1{color: hsl(0, 0%, 100%);}
 .fontDark2{color: hsl(228, 34%, 66%);}
+
+.toggleDark{
+    background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}

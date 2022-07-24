@@ -52,37 +52,44 @@
 }
 
 
-#toggleBox{
-    grid-column: 8;
+#toggleArea{
+    grid-column: 8 / 10;
     grid-row: 1;
 
     display: grid;
-    grid-template-columns: 8.5vw 9.5vw;
+    grid-template-columns: 8.5vw 21vw;
     grid-template-rows: 7.6vh 7.6vh;
 }
 
-#mode{
+#toggleBox{
     grid-column: 2;
     grid-row: 1;
 
     margin-top: auto;
     margin-bottom: 0;
+}
 
+#mode{
+    display: inline-block;
+}
+
+#mode p{
     font-size: 2.2vh;
     font-style: bold;
     font-weight: 700;
 }
 
 #toggle{
-    position: absolute;
-    right: 10vw;
-    top: 10vh;
+    height: 4vh;
+    width: 8.5vh;
 
-    height: 5vh;
-    width: 5vh;
+    display: inline-block;
+    margin-left: 0.4vw;
+    margin-bottom: -0.6vh;
 
-    background-color: blueviolet;
+    border-radius: 2vh;
 }
+
 #toggle:hover{
     cursor: pointer;
 }
