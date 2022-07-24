@@ -58,19 +58,18 @@
 
     display: grid;
     grid-template-columns: 8.5vw 21vw;
-    grid-template-rows: 7.6vh 7.6vh;
+    grid-template-rows: 15.2vh;
 }
 
 #toggleBox{
     grid-column: 2;
-    grid-row: 1;
 
     margin-top: auto;
-    margin-bottom: 0;
 }
 
 #mode{
     display: inline-block;
+    margin-bottom: 7.6vh;
 }
 
 #mode p{
@@ -85,7 +84,7 @@
 
     display: inline-block;
     margin-left: 0.4vw;
-    margin-bottom: -0.6vh;
+    margin-bottom: 7vh;
 
     border-radius: 2vh;
 }
