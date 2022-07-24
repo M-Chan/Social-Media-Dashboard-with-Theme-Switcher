@@ -134,6 +134,11 @@
 
 .mainStats{
     grid-row: 3;
+
+    display: grid;
+    grid-template-columns: 18vw;
+    grid-template-rows: 7.1vh 2.4vh;
+
 }
 
 .mainChange{
@@ -141,12 +146,13 @@
 }
 
 .upChange, .downChange{
-    width: 1.5vw;
-    height: 1vh;
+    width: 1.2vw;
+    height: 0.8vh;
 
-    background-size: 100%;
+    background-size: 70%;
     background-repeat: no-repeat;
 }
+
 
 .upChange{background-image: url(./../assets/icon-up.svg);}
 .downChange{background-image: url(./../assets/icon-down.svg);}
@@ -190,17 +196,32 @@
 
 }
 
+
 .mainNo{
+    grid-row: 1;
+
+    font-size: 8vh;
     font-style: bold;
     font-weight: 700;
+    text-align: center;
 }
 
 .mainType{
-    display: block;
+    grid-row: 2;
+    margin-top: 0.6vh;
+
+    font-size: small;
+    font-style: regular;
+    font-weight: 400;
+    text-align: center;
 }
 
 .changeFont{
     display: inline-block;
+
+    font-size: 1.8vh;
+    font-style: bold;
+    font-weight: 700;
 }
 
 .attribution { font-size: 11px; text-align: center; }
