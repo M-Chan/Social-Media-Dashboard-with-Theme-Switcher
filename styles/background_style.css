@@ -34,15 +34,21 @@
 
 #title{
     grid-row: 1;
-
     margin-top: auto;
     margin-bottom: 0;
+
+    font-size: xx-large;
+    font-style: bold;
+    font-weight: 700;
 }
 
-#totalFollows{
+#totalFollowers{
     grid-row: 2;
+    margin-top: 0.5vh;
 
-    margin-top: 0;
+    font-size: medium;
+    font-style: bold;
+    font-weight: 700;
 }
 
 
@@ -69,6 +75,9 @@
     width: 5vh;
 
     background-color: blueviolet;
+}
+#toggle:hover{
+    cursor: pointer;
 }
 
 
