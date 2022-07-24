@@ -81,6 +81,21 @@
     grid-row: 2;
 }
 
+.mainIcon{
+    width: 2.5vh;
+    height: 2.5vh;
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    margin-right: 1vh;
+}
+
+#FbIcon{background-image: url("./../assets/icon-facebook.svg");}
+#twitterIcon{background-image: url("./../assets/icon-twitter.svg");}
+#instaIcon{background-image: url("./../assets/icon-instagram.svg");}
+#YTIcon{background-image: url("./../assets/icon-youtube.svg");}
+
 .mainStats{
     grid-row: 3;
 }
