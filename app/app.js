@@ -7,8 +7,6 @@ let card = document.querySelectorAll(".card");
 let font1 = document.querySelectorAll(".font1");
 let font2 = document.querySelectorAll(".font2");
 
-// toggleButton.addEventListener("onclick", toggleDarkMode());
-
 function toggleDarkMode() {
     if(screen.classList.contains("containerLight")) {
         console.log("In Light Mode");
