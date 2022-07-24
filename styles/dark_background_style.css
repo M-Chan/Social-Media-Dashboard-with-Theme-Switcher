@@ -1,9 +1,3 @@
-*{
-	padding: 0;
-	margin: 0;
-    overflow: hidden;
-}
-
 .containerDark{
     background-color: hsl(230, 17%, 14%);
 }
