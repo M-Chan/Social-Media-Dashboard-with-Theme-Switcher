@@ -2,11 +2,14 @@
 const screen = document.getElementById("container");
 const banner = document.getElementById("banner");
 const toggleButton = document.getElementById("toggle");
+const toggleDot = document.getElementById("toggleDot");
 
 let card = document.querySelectorAll(".card");
 let font1 = document.querySelectorAll(".font1");
 let font2 = document.querySelectorAll(".font2");
 
+
+toggleDot.classList.remove("toggleDotInitial");
 
 // the function below 'toggles darkmode' by switching the colours between a light theme and a dark theme
 function toggleDarkMode() {
@@ -15,10 +18,12 @@ function toggleDarkMode() {
         console.log("In Light Mode switching to Dark Mode");
         screen.classList.remove("containerLight");
         banner.classList.remove("bannerLight");
-        toggleButton.classList.remove("toggleLight")
+        toggleButton.classList.remove("toggleLight");
+        toggleDot.classList.remove("toggleDotLight");
         screen.classList.add("containerDark");
         banner.classList.add("bannerDark");
-        toggleButton.classList.add("toggleDark")
+        toggleButton.classList.add("toggleDark");
+        toggleDot.classList.add("toggleDotDark");
 
         card.forEach(item => { // change the colour of the cards from grey to dark desaturated blue
             item.classList.remove("cardLight");
@@ -41,10 +46,12 @@ function toggleDarkMode() {
         console.log("In Dark Mode switching to Light Mode");
         screen.classList.remove("containerDark");
         banner.classList.remove("bannerDark");
-        toggleButton.classList.remove("toggleDark")
+        toggleButton.classList.remove("toggleDark");
+        toggleDot.classList.remove("toggleDotDark");
         screen.classList.add("containerLight");
         banner.classList.add("bannerLight");
-        toggleButton.classList.add("toggleLight")
+        toggleButton.classList.add("toggleLight");
+        toggleDot.classList.add("toggleDotLight");
 
         card.forEach(item => { // change the colour of the cards from dark desaturated blue to grey
             item.classList.remove("cardDark");

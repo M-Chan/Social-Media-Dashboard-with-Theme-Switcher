@@ -16,3 +16,27 @@
 .toggleDark{
     background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
+
+@keyframes move-left{
+    0% {margin-left: auto;
+        margin-right: 0.25vw;
+        background-color: hsl(225, 100%, 98%)}
+
+    50% {margin-left: auto;
+        margin-right: 2.5vw;
+        background-color: hsl(232, 19%, 15%)}
+
+    100% {margin-left: 0.25vw;
+        margin-right: auto;
+        background-color: hsl(232, 19%, 15%)}
+}
+
+.toggleDotDark{
+    background-color: hsl(232, 19%, 15%);
+
+    animation: move-left 1s;
+
+    margin-left: 0.25vw;
+    margin-right: auto;
+}
+
