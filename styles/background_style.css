@@ -212,7 +212,7 @@
     width: 18vw;
     height: 16vh;
 
-    border-radius: 0.5vh;
+    border-radius: 0.7vh;
 
     display: grid;
     grid-template-columns: 12.6vw 5.4vw; /* adds to 18vw */
@@ -230,12 +230,27 @@
 .overviewType{
     grid-column: 1;
     grid-row: 1;
+
+    margin-top: 2.8vh;
+    margin-left: 1.4vw;
+}
+
+.overviewIconBox{
+    grid-column: 2;
+    grid-row: 1;   
 }
 
 .overviewIcon{
-    grid-column: 2;
-    grid-row: 1;
+    width: 4vw;
+    height: 4vh;
+    transform: translateX(50%);
 
+    margin-top: 2.7vh;
+
+    margin-left: auto;
+    margin-right: 1.4vw;
+
+    background-size: 36%;
     background-repeat: no-repeat;
 }
 
@@ -312,6 +327,23 @@
     display: inline-block;
     
     font-size: 2vh;
+    font-style: bold;
+    font-weight: 700;
+}
+
+.overviewType p{
+    font-size: 2vh;
+    font-style: bold;
+    font-weight: 700;
+}
+
+.overviewStats{
+    margin-top: 0.3vh;
+    margin-left: 1.4vw;
+}
+
+.overviewStats p{
+    font-size: 4.8vh;
     font-style: bold;
     font-weight: 700;
 }
