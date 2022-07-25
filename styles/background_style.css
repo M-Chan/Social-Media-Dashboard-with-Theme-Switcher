@@ -195,11 +195,17 @@
 
     display: grid;
     grid-template-columns: 18vw;
-    grid-template-rows: 6.2vh 6.2vh;
+    grid-template-rows: 5.4vh 7vh;
 }
 
 #overview{
     grid-row: 2;
+    
+    font-size: 3.6vh;
+    font-style: bold;
+    font-weight: 700;
+
+    margin-top: 0;
 }
 
 .overviewCard{
