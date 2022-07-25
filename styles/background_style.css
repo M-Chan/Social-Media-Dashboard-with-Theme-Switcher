@@ -63,6 +63,7 @@
 
 #toggleBox{
     grid-column: 2;
+    grid-row: 1;
 
     margin-top: auto;
 }
@@ -184,8 +185,8 @@
 }
 
 
-.upChange{background-image: url(./../assets/icon-up.svg);}
-.downChange{background-image: url(./../assets/icon-down.svg);}
+.upChange, .upChange2{background-image: url(./../assets/icon-up.svg);}
+.downChange, .downChange{background-image: url(./../assets/icon-down.svg);}
 
 
 #overviewBox{
@@ -241,6 +242,25 @@
     grid-column: 2;
     grid-row: 2;
 }
+
+.upChange2{
+    display: inline-block;
+    width: 1.2vw;
+    height: 0.8vh;
+
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.downChange2{
+    display: inline-block;
+    width: 1.2vw;
+    height: 1vh;
+
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
 
 /* Fonts below */
 .font3{color: hsl(163, 72%, 41%);}
