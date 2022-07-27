@@ -186,7 +186,7 @@
 
 
 .upChange, .upChange2{background-image: url(./../assets/icon-up.svg);}
-.downChange, .downChange{background-image: url(./../assets/icon-down.svg);}
+.downChange, .downChange2{background-image: url(./../assets/icon-down.svg);}
 
 
 #overviewBox{
@@ -262,23 +262,29 @@
 .overviewChange{
     grid-column: 2;
     grid-row: 2;
+
+    display: flex;
+    justify-content: right;
+    margin-left: auto;
+    margin-right: 2.1vw;
+    align-items: center;
 }
 
 .upChange2{
     display: inline-block;
-    width: 1.2vw;
-    height: 0.8vh;
+    width: 0.6vw;
+    height: 0.6vh;
 
-    background-size: 80%;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .downChange2{
     display: inline-block;
-    width: 1.2vw;
-    height: 1vh;
+    width: 0.6vw;
+    height: 0.6vh;
 
-    background-size: 70%;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
@@ -294,7 +300,6 @@
     font-style: bold;
     font-weight: 700;
 }
-
 
 .mainNo{
     grid-row: 1;
@@ -325,6 +330,8 @@
 
 .changeFont2{
     display: inline-block;
+
+    margin-left: 0.2vw;
     
     font-size: 2vh;
     font-style: bold;
