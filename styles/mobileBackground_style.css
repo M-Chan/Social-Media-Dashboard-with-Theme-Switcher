@@ -1,364 +1,336 @@
-*{font-family: 'Inter', sans-serif;}
 
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); /* Regular 400 */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap'); /* Bold 700 */
-
-@media only screen and (min-width: 401px) {
-    *{
-        padding: 0;
-        margin: 0;
-        overflow: hidden;
-    }
-
+@media only screen and (max-width: 400px) { /* modelled using iPhone SE in Firefox */
     #container{
         width: 100vw;
-        height: 100vh;
+        height: auto;
+        overflow-x: hidden;
 
-        display: grid;
-        grid-template-columns: 11.45vw 18vw 1.75vw 18vw 1.7vw 18vw 1.7vw 18vw 11.45vw;
-        grid-template-rows: 15.2vh 28vh 12.4vh 16vh 2.9vh 16vh 9.5vh;
+        padding-top: 1.25vh;
+        padding-bottom: 1.25vh;
+        padding-left: 2.75vw;
+        padding-right: 2.75vw;
     }
-
-    #banner{
-        width: 100vw;
-        height: 31vh;
-    }
-
-    #titleBox{
-        grid-column: 2 / 5;
-        grid-row: 1;
-
-        display: grid;
-        grid-template-columns: 37.75vw;
-        grid-template-rows: 7.6vh 7.6vh;
-    }
-
-    #title{
-        grid-row: 1;
-        margin-top: auto;
-        margin-bottom: 0;
-
-        font-size: 4.3vh;
+    
+    #title{  
+        font-size: 4vh;
         font-style: bold;
         font-weight: 700;
+        line-height: 1vh;
     }
-
+    
     #totalFollowers{
-        grid-row: 2;
-        margin-top: 0.5vh;
-
-        font-size: 2.25vh;
+        margin-top: 0;
+    
+        font-size: 2.4vh;
         font-style: bold;
         font-weight: 700;
     }
-
-    #separator{display: none;}
-
-
-    #toggleArea{
+    
+    
+    /* #toggleArea{
         grid-column: 8 / 10;
         grid-row: 1;
 
+        background-color: blueviolet;
+    
         display: grid;
         grid-template-columns: 8.5vw 21vw;
         grid-template-rows: 15.2vh;
-    }
-
-    #toggleBox{
+    } */
+    
+    /* #toggleBox{
         grid-column: 2;
         grid-row: 1;
-
+    
         margin-top: auto;
-    }
-
-    #mode{
+    } */
+    
+    /* #mode{
         display: inline-block;
         margin-bottom: 7.6vh;
-    }
-
-    #mode p{
+    } */
+    
+    /* #mode p{
         font-size: 2.2vh;
         font-style: bold;
         font-weight: 700;
-    }
-
-    #toggle{
+    } */
+    
+    /* #toggle{
         height: 4vh;
         width: 8.5vh;
-
+    
         display: inline-block;
         margin-left: 0.4vw;
         margin-bottom: 7vh;
-
+    
         border-radius: 2vh;
-    }
+    } */
 
-    #toggle:hover{
-        cursor: pointer;
-    }
-
-    #toggleDot{
+    
+    /* #toggleDot{
         height: 2.9vh;
         width: 2.9vh;
         border-radius: 50%;
-
+    
         margin-top: 0.55vh;
-    }
-
-
-    .card:hover{
-        cursor: pointer;
-    }
-
+    } */
+    
+    
+    
     .mainCard{
-        width: 18vw;
+        width: 80vw;
         height: 28vh;
-
+    
         border-radius: 0.5vh;
 
-        grid-row: 2;
-
+        display: block;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+    
         overflow: hidden;
-
-        display: grid;
+    
+        /* display: grid;
         grid-template-columns: 18vw;
-        grid-template-rows: 0.5vh 9vh 9.5vh 9vh;
+        grid-template-rows: 0.5vh 9vh 9.5vh 9vh; */
     }
-
-    #mainFb{grid-column: 2;}
+    
+    /* #mainFb{grid-column: 2;}
     #mainTwitter{grid-column: 4;}
     #mainInsta{grid-column: 6;}
-    #mainYT{grid-column: 8;}
-
-    .cardTop{
+    #mainYT{grid-column: 8;} */
+    
+    /* .cardTop{
         width: 18vw;
         height: 0.5vh;
         grid-row: 1;
-    }
-
-    #mainFb .cardTop{background-color: hsl(208, 92%, 53%);}
+    } */
+    
+    /* #mainFb .cardTop{background-color: hsl(208, 92%, 53%);}
     #mainTwitter .cardTop{background-color: hsl(203, 89%, 53%);}
     #mainInsta .cardTop{background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%))}
-    #mainYT .cardTop{background-color: hsl(348, 97%, 39%);}
-
-    .platform, .mainStats, .mainChange{
+    #mainYT .cardTop{background-color: hsl(348, 97%, 39%);} */
+    
+    /* .platform, .mainStats, .mainChange{
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .platform{
+    } */
+    
+    /* .platform{
         grid-row: 2;
-    }
-
-    .mainIcon{
+    } */
+    
+    /* .mainIcon{
         width: 2.5vh;
         height: 2.5vh;
-
+    
         background-size: 100%;
         background-repeat: no-repeat;
-
+    
         margin-right: 1vh;
-    }
-
-    .FbIcon{background-image: url("./../assets/icon-facebook.svg");}
+    } */
+    
+    /* .FbIcon{background-image: url("./../assets/icon-facebook.svg");}
     .twitterIcon{background-image: url("./../assets/icon-twitter.svg");}
     .instaIcon{background-image: url("./../assets/icon-instagram.svg");}
-    .YTIcon{background-image: url("./../assets/icon-youtube.svg");}
-
-    .mainStats{
+    .YTIcon{background-image: url("./../assets/icon-youtube.svg");} */
+    
+    /* .mainStats{
         grid-row: 3;
-
+    
         display: grid;
         grid-template-columns: 18vw;
         grid-template-rows: 7.1vh 2.4vh;
-
-    }
-
-    .mainChange{
+    
+    } */
+    
+    /* .mainChange{
         grid-row: 4;
-    }
-
-    .upChange, .downChange{
+    } */
+    
+    /* .upChange, .downChange{
         width: 1.2vw;
         height: 0.8vh;
-
+    
         background-size: 70%;
         background-repeat: no-repeat;
-    }
-
-
-    .upChange, .upChange2{background-image: url(./../assets/icon-up.svg);}
-    .downChange, .downChange2{background-image: url(./../assets/icon-down.svg);}
-
-
-    #overviewBox{
+    } */
+    
+    
+    /* .upChange, .upChange2{background-image: url(./../assets/icon-up.svg);}
+    .downChange, .downChange2{background-image: url(./../assets/icon-down.svg);} */
+    
+    
+    /* #overviewBox{
         grid-column: 2;
         grid-row: 3;
-
+    
         display: grid;
         grid-template-columns: 18vw;
         grid-template-rows: 5.4vh 7vh;
-    }
-
-    #overview{
+    } */
+    
+    /* #overview{
         grid-row: 2;
         
         font-size: 3.6vh;
         font-style: bold;
         font-weight: 700;
-
+    
         margin-top: 0;
-    }
-
-    .overviewCard{
+    } */
+    
+    /* .overviewCard{
         width: 18vw;
         height: 16vh;
-
+    
         border-radius: 0.7vh;
-
+    
         display: grid;
-        grid-template-columns: 12.6vw 5.4vw; /* adds to 18vw */
-        grid-template-rows: 8vh 8vh; /* adds to 16vh */
-    }
-
-    #viewsFb, #likesFb, #likesInsta, #viewsInsta{grid-row: 4;}
-    #retweetsTwitter, #likesTwitter, #likesYT,#viewsYT{grid-row: 6;}
-
-    #viewsFb, #retweetsTwitter{grid-column: 2;}
+        grid-template-columns: 12.6vw 5.4vw; 
+        grid-template-rows: 8vh 8vh; 
+    } */
+    
+    /* #viewsFb, #likesFb, #likesInsta, #viewsInsta{grid-row: 4;}
+    #retweetsTwitter, #likesTwitter, #likesYT,#viewsYT{grid-row: 6;} */
+    
+    /* #viewsFb, #retweetsTwitter{grid-column: 2;}
     #likesFb, #likesTwitter{grid-column: 4;}
     #likesInsta, #likesYT{grid-column: 6;}
-    #viewsInsta, #viewsYT{grid-column: 8;}
-
-    .overviewType{
+    #viewsInsta, #viewsYT{grid-column: 8;} */
+    
+    /* .overviewType{
         grid-column: 1;
         grid-row: 1;
-
+    
         margin-top: 2.8vh;
         margin-left: 1.4vw;
-    }
-
-    .overviewIconBox{
+    } */
+    
+    /* .overviewIconBox{
         grid-column: 2;
         grid-row: 1;   
-    }
-
-    .overviewIcon{
+    } */
+    
+    /* .overviewIcon{
         width: 4vw;
         height: 4vh;
         transform: translateX(50%);
-
+    
         margin-top: 2.7vh;
-
+    
         margin-left: auto;
         margin-right: 1.4vw;
-
+    
         background-size: 36%;
         background-repeat: no-repeat;
-    }
-
-    .overviewStats{
+    } */
+    
+    /* .overviewStats{
         grid-column: 1;
         grid-row: 2;
-    }
-
-    .overviewChange{
+    } */
+    
+    /* .overviewChange{
         grid-column: 2;
         grid-row: 2;
-
+    
         display: flex;
         justify-content: right;
         margin-left: auto;
         margin-right: 2.1vw;
         align-items: center;
-    }
-
-    .upChange2{
+    } */
+    
+    /* .upChange2{
         display: inline-block;
         width: 0.6vw;
         height: 0.6vh;
-
+    
         background-size: 100%;
         background-repeat: no-repeat;
-    }
-
-    .downChange2{
+    } */
+    
+    /* .downChange2{
         display: inline-block;
         width: 0.6vw;
         height: 0.6vh;
-
+    
         background-size: 100%;
         background-repeat: no-repeat;
-    }
-
-
+    } */
+    
+    
     /* Fonts below */
-    .font3{color: hsl(163, 72%, 41%);}
-    .font4{color: hsl(356, 69%, 56%);}
-
-    .tagFont{
+    /* .font3{color: hsl(163, 72%, 41%);}
+    .font4{color: hsl(356, 69%, 56%);} */
+    
+    /* .tagFont{
         display: inline-block;
-
+    
         font-size: 1.9vh;
         font-style: bold;
         font-weight: 700;
-    }
-
-    .mainNo{
+    } */
+    
+    /* .mainNo{
         grid-row: 1;
-
+    
         font-size: 8vh;
         font-style: bold;
         font-weight: 700;
         text-align: center;
-    }
-
-    .mainType{
+    } */
+    
+    /* .mainType{
         grid-row: 2;
         margin-top: 0.65vh;
-
+    
         font-size: 1.6vh;
         font-style: regular;
         font-weight: 400;
         text-align: center;
-    }
-
-    .changeFont{
+    } */
+    
+    /* .changeFont{
         display: inline-block;
-
+    
         font-size: 1.8vh;
         font-style: bold;
         font-weight: 700;
-    }
-
-    .changeFont2{
+    } */
+    
+    /* .changeFont2{
         display: inline-block;
-
+    
         margin-left: 0.2vw;
         
         font-size: 2vh;
         font-style: bold;
         font-weight: 700;
-    }
-
-    .overviewType p{
+    } */
+    
+    /* .overviewType p{
         font-size: 2vh;
         font-style: bold;
         font-weight: 700;
-    }
-
-    .overviewStats{
+    } */
+    
+    /* .overviewStats{
         margin-top: 0.3vh;
         margin-left: 1.4vw;
-    }
-
-    .overviewStats p{
+    } */
+    
+    /* .overviewStats p{
         font-size: 4.8vh;
         font-style: bold;
         font-weight: 700;
-    }
-
-
+    } */
+    
+    
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
 }
+
