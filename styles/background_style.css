@@ -19,6 +19,18 @@
         grid-template-rows: 15.2vh 28vh 12.4vh 16vh 2.9vh 16vh 9.5vh;
     }
 
+    #mainContent{
+        width: 100vw;
+        height: 84.8vh;
+
+        grid-column: 1 / 10;
+        grid-row: 2 / 8;
+
+        display: grid;
+        grid-template-columns: 11.45vw 18vw 1.75vw 18vw 1.7vw 18vw 1.7vw 18vw 11.45vw;
+        grid-template-rows: 0vh 28vh 12.4vh 16vh 2.9vh 16vh 9.5vh;
+    }
+
     #banner{
         width: 100vw;
         height: 31vh;
