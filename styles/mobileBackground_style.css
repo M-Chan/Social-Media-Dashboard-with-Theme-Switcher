@@ -6,7 +6,7 @@
         
         display: grid;
         grid-template-columns: 3vw 94vw 3vw;
-        grid-template-rows: 1.25vh auto auto 31vh 31vh 31vh 31vh auto auto auto auto auto auto auto auto auto 1.25vh;
+        grid-template-rows: 1.25vh auto auto 35.5vh 35.5vh 35.5vh 35.5vh auto auto auto auto auto auto auto auto auto 1.25vh;
     }
 
     #titleBox{
@@ -30,21 +30,20 @@
     }
     
     
-    #toggleArea{
+    /* #toggleArea{
         grid-column: 2;
         grid-row: 3;
 
-        /* background-color: blueviolet;
+        background-color: blueviolet;
     
         display: grid;
         grid-template-columns: 8.5vw 21vw;
-        grid-template-rows: 15.2vh; */
-    }
+        grid-template-rows: auto;
+    } */
     
     /* #toggleBox{
         grid-column: 2;
-        grid-row: 1;
-    
+
         margin-top: auto;
     } */
     
@@ -82,7 +81,7 @@
     
     .mainCard{
         width: 90vw;
-        height: 28vh;
+        height: 32vh;
 
         grid-column: 2;
     
@@ -92,7 +91,7 @@
     
         display: grid;
         grid-template-columns: 90vw;
-        grid-template-rows: 0.5vh 9vh 9.5vh 9vh;
+        grid-template-rows: 1vh 9vh 9.5vh 9vh;
     }
     
     #mainFb{grid-row: 4;}
@@ -102,14 +101,14 @@
     
     .cardTop{
         width: 90vw;
-        height: 0.5vh;
+        height: 1vh;
         grid-row: 1;
     }
     
-    /* #mainFb .cardTop{background-color: hsl(208, 92%, 53%);}
+    #mainFb .cardTop{background-color: hsl(208, 92%, 53%);}
     #mainTwitter .cardTop{background-color: hsl(203, 89%, 53%);}
     #mainInsta .cardTop{background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%))}
-    #mainYT .cardTop{background-color: hsl(348, 97%, 39%);} */
+    #mainYT .cardTop{background-color: hsl(348, 97%, 39%);}
     
     /* .platform, .mainStats, .mainChange{
         display: flex;
