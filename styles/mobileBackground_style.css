@@ -6,12 +6,14 @@
         
         display: grid;
         grid-template-columns: 3vw 94vw 3vw;
-        grid-template-rows: 1.25vh auto auto 35.5vh 35.5vh 35.5vh 35.5vh auto auto auto auto auto auto auto auto auto 1.25vh;
+        grid-template-rows: 1.25vh 15vh 10.5vh 35.5vh 35.5vh 35.5vh 35.5vh auto auto auto auto auto auto auto auto auto 1.25vh;
     }
 
     #titleBox{
         grid-column: 2;
         grid-row: 2;
+
+        height: 15vh;
     }
     
     #title{ 
@@ -29,54 +31,56 @@
         font-weight: 700;
     }
     
-    
-    /* #toggleArea{
+    #toggleArea{
         grid-column: 2;
-        grid-row: 3;
+        grid-row: 3;  
 
-        background-color: blueviolet;
+        height: 10.5vh;
+    }
     
-        display: grid;
-        grid-template-columns: 8.5vw 21vw;
-        grid-template-rows: auto;
-    } */
-    
-    /* #toggleBox{
-        grid-column: 2;
-
+    #toggleBox{
         margin-top: auto;
-    } */
+
+        display: grid;
+        grid-template-columns: 70vw 20vw; /* adds to 90vw */
+        grid-template-rows: auto;
+    }
     
-    /* #mode{
-        display: inline-block;
-        margin-bottom: 7.6vh;
-    } */
+    #mode{
+        grid-column: 1;
+
+        position: relative;
+
+        top: 0%;
+    }
     
-    /* #mode p{
+    #mode p{
         font-size: 2.2vh;
         font-style: bold;
         font-weight: 700;
-    } */
+    }
     
-    /* #toggle{
+    #toggle{
         height: 4vh;
         width: 8.5vh;
-    
-        display: inline-block;
-        margin-left: 0.4vw;
-        margin-bottom: 7vh;
-    
+
+        position: relative;
+        left: auto;
+        right: 0;
+        transform: translateY(50%);
+        top: 0%;
+       
         border-radius: 2vh;
-    } */
+    }
 
     
-    /* #toggleDot{
+    #toggleDot{
         height: 2.9vh;
         width: 2.9vh;
         border-radius: 50%;
     
         margin-top: 0.55vh;
-    } */
+    }
     
     
     .mainCard{
