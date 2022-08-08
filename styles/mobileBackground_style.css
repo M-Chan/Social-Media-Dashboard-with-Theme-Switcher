@@ -6,7 +6,7 @@
         
         display: grid;
         grid-template-columns: 3vw 94vw 3vw;
-        grid-template-rows: 1.25vh 15vh 10.5vh 35.5vh 35.5vh 35.5vh 35.5vh auto auto auto auto auto auto auto auto auto 1.25vh;
+        grid-template-rows: 1.25vh 15vh 10.75vh 35.5vh 35.5vh 35.5vh 35.5vh auto auto auto auto auto auto auto auto auto 1.25vh;
     }
 
     #titleBox{
@@ -35,7 +35,7 @@
         grid-column: 2;
         grid-row: 3;  
 
-        height: 10.5vh;
+        height: 10.75vh;
     }
     
     #toggleBox{
@@ -55,7 +55,7 @@
     }
     
     #mode p{
-        font-size: 2.2vh;
+        font-size: 2.4vh;
         font-style: bold;
         font-weight: 700;
     }
