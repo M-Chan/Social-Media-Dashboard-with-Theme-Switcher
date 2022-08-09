@@ -6,7 +6,11 @@
         
         display: grid;
         grid-template-columns: 3vw 94vw 3vw;
-        grid-template-rows: 1.25vh 15vh 10.75vh 35.5vh 35.5vh 35.5vh 35.5vh auto auto auto auto auto auto auto auto auto 1.25vh;
+        grid-template-rows: 1.25vh 15vh 10.75vh 
+                            35.5vh 35.5vh 35.5vh 35.5vh /* for the 4 main cards */
+                            12vh /* Overview - Today */
+                            auto auto auto auto auto auto auto auto /* for the 8 overview cards */
+                            1.25vh;
     }
 
     #titleBox{
@@ -143,7 +147,7 @@
     
         display: grid;
         grid-template-columns: 90vw;
-        grid-template-rows: 9vh 2.25vh; /* adds to 11.25vh */
+        grid-template-rows: 9.25vh 2vh; /* adds to 11.25vh */
     }
     
     .mainChange{
@@ -168,21 +172,16 @@
     #overviewBox{
         grid-column: 2;
         grid-row: 8;
-    
-        /* display: grid;
-        grid-template-columns: 18vw;
-        grid-template-rows: 5.4vh 7vh; */
     }
     
-    /* #overview{
+    #overview{
         grid-row: 2;
         
-        font-size: 3.6vh;
+        font-size: 7.25vw;
         font-style: bold;
         font-weight: 700;
     
-        margin-top: 0;
-    } */
+    }
     
     .overviewCard{
         width: 90vw;
