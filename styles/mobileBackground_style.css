@@ -190,8 +190,6 @@
         grid-column: 2;
 
         border-radius: 0.7vh;
-
-        padding: 1vh 4vw 1vh 4vw;
     
         display: grid;
         grid-template-columns: 65vw 25vw; 
