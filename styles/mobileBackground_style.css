@@ -190,9 +190,11 @@
         grid-column: 2;
 
         border-radius: 0.7vh;
+
+        padding: 1vh 4vw 1vh 4vw;
     
         display: grid;
-        grid-template-columns: 12.6vw 5.4vw; 
+        grid-template-columns: 65vw 25vw; 
         grid-template-rows: 8vh 8vh; 
     }
     
@@ -338,7 +340,10 @@
     } */
     
     
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+    .attribution a {color: hsl(228, 45%, 44%);}
 }
 
