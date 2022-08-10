@@ -9,7 +9,7 @@
         grid-template-rows: 1.25vh 15vh 10.75vh 
                             35.5vh 35.5vh 35.5vh 35.5vh /* for the 4 main cards */
                             12vh /* Overview - Today */
-                            auto auto auto auto auto auto auto auto /* for the 8 overview cards */
+                            18.25vh 18.25vh 18.25vh 18.25vh 18.25vh 18.25vh 18.25vh 18.25vh /* for the 8 overview cards */
                             1.25vh;
     }
 
@@ -191,13 +191,11 @@
 
         border-radius: 0.7vh;
     
-        /* display: grid;
+        display: grid;
         grid-template-columns: 12.6vw 5.4vw; 
-        grid-template-rows: 8vh 8vh;  */
+        grid-template-rows: 8vh 8vh; 
     }
     
-    /* #viewsFb, #likesFb, #likesInsta, #viewsInsta{grid-row: 4;}
-    #retweetsTwitter, #likesTwitter, #likesYT,#viewsYT{grid-row: 6;} */
     
     #viewsFb{grid-row: 9;}
     #likesFb{grid-row: 10;}
@@ -209,18 +207,18 @@
     #viewsYT{grid-row: 16;}
     
     
-    /* .overviewType{
+    .overviewType{
         grid-column: 1;
         grid-row: 1;
     
-        margin-top: 2.8vh;
-        margin-left: 1.4vw;
-    } */
+        /* margin-top: 2.8vh;
+        margin-left: 1.4vw; */
+    }
     
-    /* .overviewIconBox{
+    .overviewIconBox{
         grid-column: 2;
         grid-row: 1;   
-    } */
+    }
     
     /* .overviewIcon{
         width: 4vw;
@@ -236,10 +234,10 @@
         background-repeat: no-repeat;
     } */
     
-    /* .overviewStats{
+    .overviewStats{
         grid-column: 1;
         grid-row: 2;
-    } */
+    }
     
     /* .overviewChange{
         grid-column: 2;
