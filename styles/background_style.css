@@ -21,7 +21,7 @@ html, body {
 
         display: grid;
         grid-template-columns: 11.45vw 18vw 1.75vw 18vw 1.7vw 18vw 1.7vw 18vw 11.45vw;
-        grid-template-rows: 15.2vh 28vh 12.4vh 16vh 2.9vh 16vh 9.5vh;
+        grid-template-rows: 2.25vh 15.2vh 28vh 12.4vh 16vh 2.9vh 16vh 7.25vh; /* adds to 100vh */
     }
 
     #mainContent{
@@ -29,7 +29,7 @@ html, body {
         height: 84.8vh;
 
         grid-column: 1 / 10;
-        grid-row: 2 / 8;
+        grid-row: 3 / 9;
 
         display: grid;
         grid-template-columns: 11.45vw 18vw 1.75vw 18vw 1.7vw 18vw 1.7vw 18vw 11.45vw;
@@ -43,7 +43,7 @@ html, body {
 
     #titleBox{
         grid-column: 2 / 5;
-        grid-row: 1;
+        grid-row: 2;
 
         display: grid;
         grid-template-columns: 37.75vw;
@@ -74,7 +74,7 @@ html, body {
 
     #toggleArea{
         grid-column: 8 / 10;
-        grid-row: 1;
+        grid-row: 2;
 
         display: grid;
         grid-template-columns: 8.5vw 21vw;
@@ -133,7 +133,7 @@ html, body {
 
         border-radius: 0.5vh;
 
-        grid-row: 2;
+        grid-row: 3;
 
         overflow: hidden;
 
@@ -211,7 +211,7 @@ html, body {
 
     #overviewBox{
         grid-column: 2;
-        grid-row: 3;
+        grid-row: 4;
 
         display: grid;
         grid-template-columns: 18vw;
@@ -239,8 +239,8 @@ html, body {
         grid-template-rows: 8vh 8vh; /* adds to 16vh */
     }
 
-    #viewsFb, #likesFb, #likesInsta, #viewsInsta{grid-row: 4;}
-    #retweetsTwitter, #likesTwitter, #likesYT,#viewsYT{grid-row: 6;}
+    #viewsFb, #likesFb, #likesInsta, #viewsInsta{grid-row: 5;}
+    #retweetsTwitter, #likesTwitter, #likesYT,#viewsYT{grid-row: 7;}
 
     #viewsFb, #retweetsTwitter{grid-column: 2;}
     #likesFb, #likesTwitter{grid-column: 4;}
@@ -376,6 +376,12 @@ html, body {
     }
 
 
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: relative;
+        top: auto;
+        bottom: 12px;
+    }
     .attribution a { color: hsl(228, 45%, 44%); }
 }
