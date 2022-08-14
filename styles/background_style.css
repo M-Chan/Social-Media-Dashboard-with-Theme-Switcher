@@ -376,12 +376,11 @@ html, body {
     }
 
 
-    .attribution {
+    #attribution {
         font-size: 11px;
         text-align: center;
         position: relative;
         top: auto;
         bottom: 12px;
     }
-    .attribution a { color: hsl(228, 45%, 44%); }
 }

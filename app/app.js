@@ -3,6 +3,7 @@ const screen = document.getElementById("container");
 const banner = document.getElementById("banner");
 const toggleButton = document.getElementById("toggle");
 const toggleDot = document.getElementById("toggleDot");
+const attribution = document.getElementById("attribution");
 
 let card = document.querySelectorAll(".card");
 let font1 = document.querySelectorAll(".font1");
@@ -20,10 +21,12 @@ function toggleDarkMode() {
         banner.classList.remove("bannerLight");
         toggleButton.classList.remove("toggleLight");
         toggleDot.classList.remove("toggleDotLight");
+        attribution.classList.remove("attributionLight");
         screen.classList.add("containerDark");
         banner.classList.add("bannerDark");
         toggleButton.classList.add("toggleDark");
         toggleDot.classList.add("toggleDotDark");
+        attribution.classList.add("attributionDark");
 
         card.forEach(item => { // change the colour of the cards from grey to dark desaturated blue
             item.classList.remove("cardLight");
@@ -48,10 +51,12 @@ function toggleDarkMode() {
         banner.classList.remove("bannerDark");
         toggleButton.classList.remove("toggleDark");
         toggleDot.classList.remove("toggleDotDark");
+        attribution.classList.remove("attributionDark");
         screen.classList.add("containerLight");
         banner.classList.add("bannerLight");
         toggleButton.classList.add("toggleLight");
         toggleDot.classList.add("toggleDotLight");
+        attribution.classList.add("attributionLight");
 
         card.forEach(item => { // change the colour of the cards from dark desaturated blue to grey
             item.classList.remove("cardDark");
