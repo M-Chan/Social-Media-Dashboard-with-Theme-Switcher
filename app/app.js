@@ -15,6 +15,8 @@ toggleDot.classList.remove("toggleDotInitial");
 // the function below 'toggles darkmode' by switching the colours between a light theme and a dark theme
 function toggleDarkMode() {
     if(screen.classList.contains("containerLight")) { // if in lightmode then switch to dark mode
+        document.body.style.background = "hsl(230, 17%, 14%)";
+
         console.log("In Light Mode");
         console.log("In Light Mode switching to Dark Mode");
         screen.classList.remove("containerLight");
@@ -45,6 +47,8 @@ function toggleDarkMode() {
     }
 
     else if (screen.classList.contains("containerDark")) { // if in darkmode then switch to light mode
+        document.body.style.background = "hsl(0, 0%, 100%)";
+
         console.log("In Dark Mode");
         console.log("In Dark Mode switching to Light Mode");
         screen.classList.remove("containerDark");
