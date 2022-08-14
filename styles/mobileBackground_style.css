@@ -220,19 +220,17 @@
         grid-row: 1;   
     }
     
-    /* .overviewIcon{
-        width: 4vw;
-        height: 4vh;
-        transform: translateX(50%);
+    .overviewIcon{
+        width: 6vw;
+        height: 6vh;
     
         margin-top: 2.7vh;
-    
         margin-left: auto;
         margin-right: 1.4vw;
     
-        background-size: 36%;
+        background-size: 100%;
         background-repeat: no-repeat;
-    } */
+    }
     
     .overviewStats{
         grid-column: 1;
