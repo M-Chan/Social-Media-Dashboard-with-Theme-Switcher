@@ -7,7 +7,6 @@ const attribution = document.getElementById("attribution");
 let card = document.querySelectorAll(".card");
 let font1 = document.querySelectorAll(".font1");
 let font2 = document.querySelectorAll(".font2");
-let font3 = document.querySelectorAll(".font3");
 
 
 toggleDot.classList.remove("toggleDotInitial");
@@ -42,11 +41,6 @@ function toggleDarkMode() {
             item.classList.remove("fontLight2");
             item.classList.add("fontDark2");
         })
-
-        font3.forEach(item => {
-            item.classList.remove("fontLight3");
-            item.classList.add("fontDark3");
-        })
     }
 
     else if (banner.classList.contains("bannerDark")) { // if in darkmode then switch to light mode
@@ -76,11 +70,6 @@ function toggleDarkMode() {
         font2.forEach(item => {
             item.classList.remove("fontDark2");
             item.classList.add("fontLight2");
-        })
-
-        font3.forEach(item => {
-            item.classList.remove("fontDark3");
-            item.classList.add("fontLight3");
         })
     }
 
