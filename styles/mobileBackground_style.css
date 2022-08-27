@@ -149,6 +149,8 @@
         grid-template-columns: 90vw;
         grid-template-rows: 9.25vh 2vh; /* adds to 11.25vh */
     }
+
+    .mainType{letter-spacing: 1vw;}
     
     .mainChange{
         grid-row: 4;
