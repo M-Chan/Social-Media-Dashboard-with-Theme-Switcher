@@ -10,382 +10,208 @@ html, body {
 
 .mainType{text-transform: uppercase;}
 
+#container{
+    width: 100vw;
+    display: grid;
+}
 
-@media only screen and (min-width: 401px) {
-    *{
-        padding: 0;
-        margin: 0;
-        overflow: hidden;
-    }
-
-    #container{
-        width: 100vw;
-        height: 100vh;
-
-        display: grid;
-        grid-template-columns: 11.45vw 18vw 1.75vw 18vw 1.7vw 18vw 1.7vw 18vw 11.45vw;
-        grid-template-rows: 2.25vh 15.2vh 28vh 12.4vh 16vh 2.9vh 16vh 7.25vh; /* adds to 100vh */
-    }
+#titleBox{grid-row: 2;}
 
-    #mainContent{
-        width: 100vw;
-        height: 84.8vh;
+#title{
+    font-style: bold;
+    font-weight: 700;
+}
 
-        grid-column: 1 / 10;
-        grid-row: 3 / 9;
-
-        display: grid;
-        grid-template-columns: 11.45vw 18vw 1.75vw 18vw 1.7vw 18vw 1.7vw 18vw 11.45vw;
-        grid-template-rows: 0vh 28vh 12.4vh 16vh 2.9vh 16vh 9.5vh;
-    }
+#totalFollowers{
+    font-style: bold;
+    font-weight: 700;
+}
 
-    #banner{
-        width: 100vw;
-        height: 31vh;
-    }
+#separator{display: none;}
+
+#toggleBox{margin-top: auto;}
 
-    #titleBox{
-        grid-column: 2 / 5;
-        grid-row: 2;
+#mode p{
+    font-style: bold;
+    font-weight: 700;
+}
+
+#toggle{
+    height: 4vh;
+    width: 8.5vh;
+
+    border-radius: 2vh;
+}
+
+#toggleDot{
+    height: 2.9vh;
+    width: 2.9vh;
+    border-radius: 50%;
+
+    margin-top: 0.55vh;
+}
 
-        display: grid;
-        grid-template-columns: 37.75vw;
-        grid-template-rows: 7.6vh 7.6vh;
-    }
-
-    #title{
-        grid-row: 1;
-        margin-top: auto;
-        margin-bottom: 0;
-
-        font-size: 4.3vh;
-        font-style: bold;
-        font-weight: 700;
-    }
-
-    #totalFollowers{
-        grid-row: 2;
-        margin-top: 0.5vh;
-
-        font-size: 2.25vh;
-        font-style: bold;
-        font-weight: 700;
-    }
-
-    #separator{display: none;}
-
-
-    #toggleArea{
-        grid-column: 8 / 10;
-        grid-row: 2;
-
-        display: grid;
-        grid-template-columns: 8.5vw 21vw;
-        grid-template-rows: 15.2vh;
-    }
-
-    #toggleBox{
-        grid-column: 2;
-        grid-row: 1;
-
-        margin-top: auto;
-    }
-
-    #mode{
-        display: inline-block;
-        margin-bottom: 7.6vh;
-    }
-
-    #mode p{
-        font-size: 2.2vh;
-        font-style: bold;
-        font-weight: 700;
-    }
-
-    #toggle{
-        height: 4vh;
-        width: 8.5vh;
-
-        display: inline-block;
-        margin-left: 0.4vw;
-        margin-bottom: 7vh;
-
-        border-radius: 2vh;
-    }
-
-    #toggle:hover{
-        cursor: pointer;
-    }
-
-    #toggleDot{
-        height: 2.9vh;
-        width: 2.9vh;
-        border-radius: 50%;
-
-        margin-top: 0.55vh;
-    }
-
-
-    .card:hover{
-        cursor: pointer;
-    }
-
-    .mainCard{
-        width: 18vw;
-        height: 28vh;
-
-        border-radius: 0.5vh;
-
-        grid-row: 3;
-
-        overflow: hidden;
-
-        display: grid;
-        grid-template-columns: 18vw;
-        grid-template-rows: 0.5vh 9vh 9.5vh 9vh;
-    }
-
-    #mainFb{grid-column: 2;}
-    #mainTwitter{grid-column: 4;}
-    #mainInsta{grid-column: 6;}
-    #mainYT{grid-column: 8;}
-
-    .cardTop{
-        width: 18vw;
-        height: 0.5vh;
-        grid-row: 1;
-    }
-
-    #mainFb .cardTop{background-color: hsl(208, 92%, 53%);}
-    #mainTwitter .cardTop{background-color: hsl(203, 89%, 53%);}
-    #mainInsta .cardTop{background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%))}
-    #mainYT .cardTop{background-color: hsl(348, 97%, 39%);}
-
-    .platform, .mainStats, .mainChange{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .platform{
-        grid-row: 2;
-    }
-
-    .mainIcon{
-        width: 2.5vh;
-        height: 2.5vh;
-
-        background-size: 100%;
-        background-repeat: no-repeat;
-
-        margin-right: 1vh;
-    }
-
-    .FbIcon{background-image: url("./../assets/icon-facebook.svg");}
-    .twitterIcon{background-image: url("./../assets/icon-twitter.svg");}
-    .instaIcon{background-image: url("./../assets/icon-instagram.svg");}
-    .YTIcon{background-image: url("./../assets/icon-youtube.svg");}
-
-    .mainStats{
-        grid-row: 3;
-
-        display: grid;
-        grid-template-columns: 18vw;
-        grid-template-rows: 7.1vh 2.4vh;
-
-    }
-
-    .mainType{letter-spacing: 0.26vw;}
-
-    .mainChange{
-        grid-row: 4;
-    }
-
-    .upChange, .downChange{
-        width: 1.2vw;
-        height: 0.8vh;
-
-        background-size: 70%;
-        background-repeat: no-repeat;
-    }
-
-
-    .upChange, .upChange2{background-image: url(./../assets/icon-up.svg);}
-    .downChange, .downChange2{background-image: url(./../assets/icon-down.svg);}
-
-
-    #overviewBox{
-        grid-column: 2;
-        grid-row: 4;
-
-        display: grid;
-        grid-template-columns: 18vw;
-        grid-template-rows: 5.4vh 7vh;
-    }
-
-    #overview{
-        grid-row: 2;
-        
-        font-size: 3.6vh;
-        font-style: bold;
-        font-weight: 700;
-
-        margin-top: 0;
-    }
-
-    .overviewCard{
-        width: 18vw;
-        height: 16vh;
-
-        border-radius: 0.7vh;
-
-        display: grid;
-        grid-template-columns: 12.6vw 5.4vw; /* adds to 18vw */
-        grid-template-rows: 8vh 8vh; /* adds to 16vh */
-    }
-
-    #viewsFb, #likesFb, #likesInsta, #viewsInsta{grid-row: 5;}
-    #retweetsTwitter, #likesTwitter, #likesYT,#viewsYT{grid-row: 7;}
-
-    #viewsFb, #retweetsTwitter{grid-column: 2;}
-    #likesFb, #likesTwitter{grid-column: 4;}
-    #likesInsta, #likesYT{grid-column: 6;}
-    #viewsInsta, #viewsYT{grid-column: 8;}
-
-    .overviewType{
-        grid-column: 1;
-        grid-row: 1;
-
-        margin-top: 2.8vh;
-        margin-left: 1.4vw;
-    }
-
-    .overviewIconBox{
-        grid-column: 2;
-        grid-row: 1;   
-    }
-
-    .overviewIcon{
-        width: 4vw;
-        height: 4vh;
-        transform: translateX(50%);
-
-        margin-top: 2.7vh;
-
-        margin-left: auto;
-        margin-right: 1.4vw;
-
-        background-size: 36%;
-        background-repeat: no-repeat;
-    }
-
-    .overviewStats{
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-    .overviewChange{
-        grid-column: 2;
-        grid-row: 2;
-
-        display: flex;
-        justify-content: end;
-        margin-left: auto;
-        margin-right: 2.1vw;
-        align-items: center;
-    }
-
-    .upChange2{
-        display: inline-block;
-        width: 0.6vw;
-        height: 0.6vh;
-
-        background-size: 100%;
-        background-repeat: no-repeat;
-    }
-
-    .downChange2{
-        display: inline-block;
-        width: 0.6vw;
-        height: 0.6vh;
-
-        background-size: 100%;
-        background-repeat: no-repeat;
-    }
-
-
-    /* Fonts below */
-    .font3{color: hsl(163, 72%, 41%);}
-    .font4{color: hsl(356, 69%, 56%);}
-
-    .tagFont{
-        display: inline-block;
-
-        font-size: 1.9vh;
-        font-style: bold;
-        font-weight: 700;
-    }
-
-    .mainNo{
-        grid-row: 1;
-
-        font-size: 8vh;
-        font-style: bold;
-        font-weight: 700;
-        text-align: center;
-    }
-
-    .mainType{
-        grid-row: 2;
-        margin-top: 0.65vh;
-
-        font-size: 1.6vh;
-        font-style: regular;
-        font-weight: 400;
-        text-align: center;
-    }
-
-    .changeFont{
-        display: inline-block;
-
-        font-size: 1.8vh;
-        font-style: bold;
-        font-weight: 700;
-    }
-
-    .changeFont2{
-        display: inline-block;
-
-        margin-left: 0.25vw;
-        
-        font-size: 2vh;
-        font-style: bold;
-        font-weight: 700;
-    }
-
-    .overviewType p{
-        font-size: 2vh;
-        font-style: bold;
-        font-weight: 700;
-    }
-
-    .overviewStats{
-        margin-top: 0.3vh;
-        margin-left: 1.4vw;
-    }
-
-    .overviewStats p{
-        font-size: 4.8vh;
-        font-style: bold;
-        font-weight: 700;
-    }
-
-
-    #attribution {
-        width: 100vw;
-        position: absolute;
-        bottom: 2vh;
-        text-align: center;
-        font-size: 2.5vh;
-    }
+.mainCard{
+    border-radius: 0.5vh;
+    overflow: hidden;
+    display: grid;
+}
+
+.cardTop{grid-row: 1;}
+
+#mainFb .cardTop{background-color: hsl(208, 92%, 53%);}
+#mainTwitter .cardTop{background-color: hsl(203, 89%, 53%);}
+#mainInsta .cardTop{background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%))}
+#mainYT .cardTop{background-color: hsl(348, 97%, 39%);}
+
+.platform, .mainStats, .mainChange{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.platform{grid-row: 2;}
+
+.mainIcon{
+    width: 2.5vh;
+    height: 2.5vh;
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    margin-right: 1vh;
+}
+
+.FbIcon{background-image: url("./../assets/icon-facebook.svg");}
+.twitterIcon{background-image: url("./../assets/icon-twitter.svg");}
+.instaIcon{background-image: url("./../assets/icon-instagram.svg");}
+.YTIcon{background-image: url("./../assets/icon-youtube.svg");}
+
+.mainStats{
+    grid-row: 3;
+    display: grid;
+}
+
+.mainChange{grid-row: 4;}
+
+.upChange, .downChange{background-repeat: no-repeat;}
+
+.upChange, .upChange2{background-image: url(./../assets/icon-up.svg);}
+.downChange, .downChange2{background-image: url(./../assets/icon-down.svg);}
+
+#overviewBox{grid-column: 2;}
+
+#overview{
+    grid-row: 2;
+    
+    font-style: bold;
+    font-weight: 700;
+}
+
+.overviewCard{
+    border-radius: 0.7vh;
+    display: grid;
+}
+
+.overviewType{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.overviewIconBox{
+    grid-column: 2;
+    grid-row: 1;   
+}
+
+.overviewIcon{
+    margin-left: auto;
+    margin-right: 1.4vw;
+    background-repeat: no-repeat;
+}
+
+.overviewStats{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.overviewChange{
+    grid-column: 2;
+    grid-row: 2;
+
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.upChange2, .downChange2{
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+
+/* Fonts below */
+.font3{color: hsl(163, 72%, 41%);}
+.font4{color: hsl(356, 69%, 56%);}
+
+.tagFont{
+    display: inline-block;
+    font-size: 1.9vh;
+    font-style: bold;
+    font-weight: 700;
+}
+
+.mainNo{
+    grid-row: 1;
+
+    font-size: 8vh;
+    font-style: bold;
+    font-weight: 700;
+    text-align: center;
+}
+
+.mainType{
+    grid-row: 2;
+    margin-top: 0.65vh;
+
+    font-size: 1.6vh;
+    font-style: regular;
+    font-weight: 400;
+    text-align: center;
+}
+
+.changeFont{
+    display: inline-block;
+
+    font-size: 1.8vh;
+    font-style: bold;
+    font-weight: 700;
+}
+
+.changeFont2{
+    display: inline-block;
+    
+    font-size: 2vh;
+    font-style: bold;
+    font-weight: 700;
+}
+
+.overviewType p{
+    font-style: bold;
+    font-weight: 700;
+}
+
+.overviewStats{
+    margin-top: 0.3vh;
+    margin-left: 1.4vw;
+}
+
+.overviewStats p{
+    font-style: bold;
+    font-weight: 700;
+}
+
+
+#attribution {
+    width: 100vw;
+    text-align: center;
 }

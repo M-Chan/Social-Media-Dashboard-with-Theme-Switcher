@@ -1,10 +1,8 @@
 
 @media only screen and (max-width: 400px) { /* modelled using iPhone SE in Firefox */
     #container{
-        width: 100vw;
         height: auto;
         
-        display: grid;
         grid-template-columns: 3vw 94vw 3vw;
         grid-template-rows: 1.25vh 15vh 10.75vh 
                             35.5vh 35.5vh 35.5vh 35.5vh /* for the 4 main cards */
@@ -15,15 +13,12 @@
 
     #titleBox{
         grid-column: 2;
-        grid-row: 2;
 
         height: 15vh;
     }
     
     #title{ 
         font-size: 4vh;
-        font-style: bold;
-        font-weight: 700;
         line-height: 1vh;
     }
     
@@ -31,8 +26,6 @@
         margin-top: 0;
     
         font-size: 2.4vh;
-        font-style: bold;
-        font-weight: 700;
     }
     
     #toggleArea{
@@ -43,8 +36,6 @@
     }
     
     #toggleBox{
-        margin-top: auto;
-
         display: grid;
         grid-template-columns: 70vw 20vw; /* adds to 90vw */
         grid-template-rows: auto;
@@ -58,45 +49,22 @@
         top: 0%;
     }
     
-    #mode p{
-        font-size: 2.4vh;
-        font-style: bold;
-        font-weight: 700;
-    }
+    #mode p{font-size: 2.4vh;}
     
     #toggle{
-        height: 4vh;
-        width: 8.5vh;
-
         position: relative;
         left: auto;
         right: 0;
         transform: translateY(50%);
         top: 0%;
-       
-        border-radius: 2vh;
     }
-
-    
-    #toggleDot{
-        height: 2.9vh;
-        width: 2.9vh;
-        border-radius: 50%;
-    
-        margin-top: 0.55vh;
-    }
-    
     
     .mainCard{
         width: 90vw;
         height: 32vh;
 
         grid-column: 2;
-        overflow: hidden;
-    
-        border-radius: 0.5vh;    
-    
-        display: grid;
+       
         grid-template-columns: 90vw;
         grid-template-rows: 0.75vh 10vh 11.25vh 10vh; /* adds to 32vh */
     }
@@ -109,52 +77,14 @@
     .cardTop{
         width: 90vw;
         height: 0.75vh;
-        grid-row: 1;
     }
-    
-    #mainFb .cardTop{background-color: hsl(208, 92%, 53%);}
-    #mainTwitter .cardTop{background-color: hsl(203, 89%, 53%);}
-    #mainInsta .cardTop{background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%))}
-    #mainYT .cardTop{background-color: hsl(348, 97%, 39%);}
-    
-    .platform, .mainStats, .mainChange{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .platform{
-        grid-row: 2;
-    }
-    
-    .mainIcon{
-        width: 2.5vh;
-        height: 2.5vh;
-    
-        background-size: 100%;
-        background-repeat: no-repeat;
-    
-        margin-right: 1vh;
-    }
-    
-    .FbIcon{background-image: url("./../assets/icon-facebook.svg");}
-    .twitterIcon{background-image: url("./../assets/icon-twitter.svg");}
-    .instaIcon{background-image: url("./../assets/icon-instagram.svg");}
-    .YTIcon{background-image: url("./../assets/icon-youtube.svg");}
     
     .mainStats{
-        grid-row: 3;
-    
-        display: grid;
         grid-template-columns: 90vw;
         grid-template-rows: 9.25vh 2vh; /* adds to 11.25vh */
     }
 
     .mainType{letter-spacing: 1vw;}
-    
-    .mainChange{
-        grid-row: 4;
-    }
     
     .upChange, .downChange{
         width: 2vw;
@@ -164,26 +94,11 @@
         top: 0.6vh;
     
         background-size: 100%;
-        background-repeat: no-repeat;
-    }
+    }    
     
-    .upChange, .upChange2{background-image: url("./../assets/icon-up.svg");}
-    .downChange, .downChange2{background-image: url("./../assets/icon-down.svg");}
+    #overviewBox{grid-row: 8;}
     
-    
-    #overviewBox{
-        grid-column: 2;
-        grid-row: 8;
-    }
-    
-    #overview{
-        grid-row: 2;
-        
-        font-size: 7.25vw;
-        font-style: bold;
-        font-weight: 700;
-    
-    }
+    #overview{font-size: 7.25vw;}
     
     .overviewCard{
         width: 90vw;
@@ -191,9 +106,6 @@
 
         grid-column: 2;
 
-        border-radius: 0.7vh;
-    
-        display: grid;
         grid-template-columns: 65vw 25vw; 
         grid-template-rows: 7vh 12.5vh; 
     }
@@ -210,33 +122,20 @@
     
     
     .overviewType{
-        grid-column: 1;
-        grid-row: 1;
-    
         margin-top: 1vh;
         margin-left: 7vw;
     }
 
     .overviewType p{
         font-size: 2.4vh;
-        font-style: bold;
-        font-weight: 700;
         text-align: start;
     }
 
     .overviewStats{
-        grid-column: 1;
-        grid-row: 2;
-        
         display: flex;
         align-items: center;
         padding-left: 5.5vw;
         text-align: start;
-    }
-    
-    .overviewIconBox{
-        grid-column: 2;
-        grid-row: 1;   
     }
     
     .overviewIcon{
@@ -244,117 +143,37 @@
         height: 6vh;
     
         margin-top: 3vh;
-        margin-left: auto;
         margin-right: 5.5vw;
     
         background-size: 100%;
-        background-repeat: no-repeat;
     }
     
     .overviewChange{
-        grid-column: 2;
-        grid-row: 2;
-    
-        display: flex;
         justify-content: right;
-        margin-left: auto;
         margin-right: 5.5vw;
-        align-items: center;
         margin-top: 1.75vh;
     }
     
-    .upChange2{
-        display: inline-block;
+    .upChange2, .downChange2{
         width: 3vw;
         height: 3vh;
     
         background-size: 75%;
         background-position: center;
-        background-repeat: no-repeat;
     }
-    
-    .downChange2{
-        display: inline-block;
-        width: 3vw;
-        height: 3vh;
-    
-        background-size: 75%;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    
+      
     
     /* Fonts below */
-    .font3{color: hsl(163, 72%, 41%);}
-    .font4{color: hsl(356, 69%, 56%);}
+    .changeFont{margin-left: 0.75vw;}
     
-    .tagFont{
-        display: inline-block;
+    .changeFont2{margin-left: 0.75vw;}
     
-        font-size: 1.9vh;
-        font-style: bold;
-        font-weight: 700;
-    }
-    
-    .mainNo{
-        grid-row: 1;
-    
-        font-size: 8vh;
-        font-style: bold;
-        font-weight: 700;
-        text-align: center;
-    }
-    
-    .mainType{
-        grid-row: 2;
-        margin-top: 0.65vh;
-    
-        font-size: 1.6vh;
-        font-style: regular;
-        font-weight: 400;
-        text-align: center;
-    }
-    
-    .changeFont{
-        display: inline-block;
-    
-        font-size: 1.85vh;
-        font-style: bold;
-        font-weight: 700;
-
-        margin-left: 0.75vw;
-    }
-    
-    .changeFont2{
-        display: inline-block;
-    
-        margin-left: 0.75vw;
-        
-        font-size: 2vh;
-        font-style: bold;
-        font-weight: 700;
-    }
-    
-
-    
-    .overviewStats{
-        margin-top: 0.3vh;
-        margin-left: 1.4vw;
-    }
-    
-    .overviewStats p{
-        font-size: 6vh;
-        font-style: bold;
-        font-weight: 700;
-    }
+    .overviewStats p{font-size: 6vh;}
     
     
     #attribution {
-        width: 100vw;
         position: relative;
         bottom: 1.5vh;
-        text-align: center;
         font-size: 3vw;
     }
 }
-

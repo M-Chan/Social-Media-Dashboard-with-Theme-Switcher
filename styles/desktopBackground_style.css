@@ -1,0 +1,199 @@
+
+@media only screen and (min-width: 401px) {
+    *{
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    #container{
+        height: 100vh;
+
+        grid-template-columns: 11.45vw 18vw 1.75vw 18vw 1.7vw 18vw 1.7vw 18vw 11.45vw;
+        grid-template-rows: 2.25vh 15.2vh 28vh 12.4vh 16vh 2.9vh 16vh 7.25vh; /* adds to 100vh */
+    }
+
+    #mainContent{
+        width: 100vw;
+        height: 84.8vh;
+
+        grid-column: 1 / 10;
+        grid-row: 3 / 9;
+
+        display: grid;
+        grid-template-columns: 11.45vw 18vw 1.75vw 18vw 1.7vw 18vw 1.7vw 18vw 11.45vw;
+        grid-template-rows: 0vh 28vh 12.4vh 16vh 2.9vh 16vh 9.5vh;
+    }
+
+    #banner{
+        width: 100vw;
+        height: 31vh;
+    }
+
+    #titleBox{
+        grid-column: 2 / 5;
+
+        display: grid;
+        grid-template-columns: 37.75vw;
+        grid-template-rows: 7.6vh 7.6vh;
+    }
+
+    #title{
+        grid-row: 1;
+        margin-top: auto;
+        margin-bottom: 0;
+
+        font-size: 4.3vh;
+    }
+
+    #totalFollowers{
+        grid-row: 2;
+        margin-top: 0.5vh;
+
+        font-size: 2.25vh;
+    }
+
+    #separator{display: none;}
+
+
+    #toggleArea{
+        grid-column: 8 / 10;
+        grid-row: 2;
+
+        display: grid;
+        grid-template-columns: 8.5vw 21vw;
+        grid-template-rows: 15.2vh;
+    }
+
+    #toggleBox{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #mode{
+        display: inline-block;
+        margin-bottom: 7.6vh;
+    }
+
+    #mode p{font-size: 2.2vh;}
+
+    #toggle{
+        display: inline-block;
+        margin-left: 0.4vw;
+        margin-bottom: 7vh;
+    }
+
+    #toggle:hover{
+        cursor: pointer;
+    }
+
+    .card:hover{
+        cursor: pointer;
+    }
+
+    .mainCard{
+        width: 18vw;
+        height: 28vh;
+
+        grid-row: 3;
+
+        grid-template-columns: 18vw;
+        grid-template-rows: 0.5vh 9vh 9.5vh 9vh;
+    }
+
+    #mainFb{grid-column: 2;}
+    #mainTwitter{grid-column: 4;}
+    #mainInsta{grid-column: 6;}
+    #mainYT{grid-column: 8;}
+
+    .cardTop{
+        width: 18vw;
+        height: 0.5vh;
+    }
+
+    .mainStats{
+        grid-template-columns: 18vw;
+        grid-template-rows: 7.1vh 2.4vh;
+    }
+
+    .mainType{letter-spacing: 0.26vw;}
+
+    .upChange, .downChange{
+        width: 1.2vw;
+        height: 0.8vh;
+
+        background-size: 70%;
+    }
+
+    #overviewBox{
+        grid-row: 4;
+
+        display: grid;
+        grid-template-columns: 18vw;
+        grid-template-rows: 5.4vh 7vh;
+    }
+
+    #overview{
+        font-size: 3.6vh;
+        margin-top: 0;
+    }
+
+    .overviewCard{
+        width: 18vw;
+        height: 16vh;
+
+        grid-template-columns: 12.6vw 5.4vw; /* adds to 18vw */
+        grid-template-rows: 8vh 8vh; /* adds to 16vh */
+    }
+
+    #viewsFb, #likesFb, #likesInsta, #viewsInsta{grid-row: 5;}
+    #retweetsTwitter, #likesTwitter, #likesYT,#viewsYT{grid-row: 7;}
+
+    #viewsFb, #retweetsTwitter{grid-column: 2;}
+    #likesFb, #likesTwitter{grid-column: 4;}
+    #likesInsta, #likesYT{grid-column: 6;}
+    #viewsInsta, #viewsYT{grid-column: 8;}
+
+    .overviewType{
+        margin-top: 2.8vh;
+        margin-left: 1.4vw;
+    }
+
+    .overviewIcon{
+        width: 4vw;
+        height: 4vh;
+        transform: translateX(50%);
+
+        margin-top: 2.7vh;
+        margin-right: 1.4vw;
+
+        background-size: 36%;
+    }
+
+    .overviewChange{
+        justify-content: end;
+        margin-right: 2.1vw;
+    }
+
+    .upChange2, .downChange2{
+        width: 0.6vw;
+        height: 0.6vh;
+
+        background-size: 100%;
+    }
+
+
+    /* Fonts below */
+    .changeFont2{ margin-left: 0.25vw;}
+
+    .overviewType p{font-size: 2vh;}
+
+    .overviewStats p{font-size: 4.8vh;}
+
+
+    #attribution {
+        position: absolute;
+        bottom: 2vh;
+        font-size: 2.5vh;
+    }
+}
