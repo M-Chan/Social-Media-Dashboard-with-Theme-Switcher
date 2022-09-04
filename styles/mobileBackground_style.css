@@ -9,7 +9,7 @@
         grid-template-rows: 1.25vh 15vh 10.75vh 
                             35.5vh 35.5vh 35.5vh 35.5vh /* for the 4 main cards */
                             12vh /* Overview - Today */
-                            24vh 24vh 24vh 24vh 24vh 24vh 24vh 24vh /* for the 8 overview cards */
+                            22.5vh 22.5vh 22.5vh 22.5vh 22.5vh 22.5vh 22.5vh 22.5vh /* for the 8 overview cards */
                             1.25vh;
     }
 
@@ -187,7 +187,7 @@
     
     .overviewCard{
         width: 90vw;
-        height: 21vh;
+        height: 19.5vh;
 
         grid-column: 2;
 
@@ -195,7 +195,7 @@
     
         display: grid;
         grid-template-columns: 65vw 25vw; 
-        grid-template-rows: 10.5vh 10.5vh; 
+        grid-template-rows: 7vh 12.5vh; 
     }
     
     
@@ -213,8 +213,25 @@
         grid-column: 1;
         grid-row: 1;
     
-        margin-top: 2.8vh;
+        margin-top: 1vh;
         margin-left: 7vw;
+    }
+
+    .overviewType p{
+        font-size: 2.4vh;
+        font-style: bold;
+        font-weight: 700;
+        text-align: start;
+    }
+
+    .overviewStats{
+        grid-column: 1;
+        grid-row: 2;
+        
+        display: flex;
+        align-items: center;
+        padding-left: 5.5vw;
+        text-align: start;
     }
     
     .overviewIconBox{
@@ -226,20 +243,12 @@
         width: 6vw;
         height: 6vh;
     
-        margin-top: 2.7vh;
+        margin-top: 3vh;
         margin-left: auto;
-        margin-right: 7.5vw;
+        margin-right: 5.5vw;
     
         background-size: 100%;
         background-repeat: no-repeat;
-    }
-    
-    .overviewStats{
-        grid-column: 1;
-        grid-row: 2;
-
-        position: relative;
-        left: 7vw;
     }
     
     .overviewChange{
@@ -249,25 +258,28 @@
         display: flex;
         justify-content: right;
         margin-left: auto;
-        margin-right: 2.1vw;
+        margin-right: 5.5vw;
         align-items: center;
+        margin-top: 1.75vh;
     }
     
     .upChange2{
         display: inline-block;
-        width: 2vw;
-        height: 2vh;
+        width: 3vw;
+        height: 3vh;
     
-        background-size: contain;
+        background-size: 75%;
+        background-position: center;
         background-repeat: no-repeat;
     }
     
     .downChange2{
         display: inline-block;
-        width: 2vw;
-        height: 2vh;
+        width: 3vw;
+        height: 3vh;
     
-        background-size: contain;
+        background-size: 75%;
+        background-position: center;
         background-repeat: no-repeat;
     }
     
@@ -310,24 +322,20 @@
         font-style: bold;
         font-weight: 700;
 
-        margin-left: 0.5vw;
+        margin-left: 0.75vw;
     }
     
     .changeFont2{
         display: inline-block;
     
-        margin-left: 0.2vw;
+        margin-left: 0.75vw;
         
         font-size: 2vh;
         font-style: bold;
         font-weight: 700;
     }
     
-    .overviewType p{
-        font-size: 2vh;
-        font-style: bold;
-        font-weight: 700;
-    }
+
     
     .overviewStats{
         margin-top: 0.3vh;
@@ -335,15 +343,18 @@
     }
     
     .overviewStats p{
-        font-size: 4.8vh;
+        font-size: 6vh;
         font-style: bold;
         font-weight: 700;
     }
     
     
     #attribution {
-        font-size: 11px;
+        width: 100vw;
+        position: relative;
+        bottom: 1.5vh;
         text-align: center;
+        font-size: 3vw;
     }
 }
 
