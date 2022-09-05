@@ -22,8 +22,20 @@ Users should be able to:
 
 
 ### Screenshots
-![](./screenshot.jpg)
-
+<p float="left">
+<img src="https://user-images.githubusercontent.com/81781462/188442058-07625828-f069-46a5-a19a-c196cbe39e19.png"  alt="Frontend Mentor Social Media Dashboard with Theme Switcher - Desktop_Dark" height="275">
+<img src="https://user-images.githubusercontent.com/81781462/188442061-baa1fa29-cc5d-49cd-ab84-fa96debd2ac8.png"  alt="Frontend Mentor Social Media Dashboard with Theme Switcher - Mobile_Dark" height="275" style="display: inline-block">
+</p>
+<p float="left">
+<img src="https://user-images.githubusercontent.com/81781462/188442059-4c97b03d-5244-41a1-ae7d-12d7c7fed266.png"  alt="Frontend Mentor Social Media Dashboard with Theme Switcher - Desktop_Light" height="275">
+<img src="https://user-images.githubusercontent.com/81781462/188442062-4a83626c-90d2-4831-81a4-4ef41bfa0d05.png"  alt="Frontend Mentor Social Media Dashboard with Theme Switcher - Mobile_Light" height="275" style="display: inline-block">
+</p>
+<!---
+![Frontend Mentor Social Media Dashboard with Theme Switcher - Desktop_Dark](https://user-images.githubusercontent.com/81781462/188442058-07625828-f069-46a5-a19a-c196cbe39e19.png)
+![Frontend Mentor Social Media Dashboard with Theme Switcher - Desktop_Light](https://user-images.githubusercontent.com/81781462/188442059-4c97b03d-5244-41a1-ae7d-12d7c7fed266.png)
+![Frontend Mentor Social Media Dashboard with Theme Switcher - Mobile_Dark](https://user-images.githubusercontent.com/81781462/188442061-baa1fa29-cc5d-49cd-ab84-fa96debd2ac8.png)
+![Frontend Mentor Social Media Dashboard with Theme Switcher - Mobile_Light](https://user-images.githubusercontent.com/81781462/188442062-4a83626c-90d2-4831-81a4-4ef41bfa0d05.png)
+--->
 
 
 ### Links
