@@ -40,8 +40,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution]()
-- Live Site URL: [Social-Media-Dashboard-with-Theme-Switcher]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/social-media-dashboard-with-theme-switcher-using-vanilla-js-and-css-grid-WO8b7ppZ6T)
+- Live Site URL: [Social-Media-Dashboard-with-Theme-Switcher](https://m-chan.github.io/Social-Media-Dashboard-with-Theme-Switcher/)
 
 &nbsp;
 ## My process
